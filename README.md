@@ -2,6 +2,9 @@
 # EVICTION CRISIS IN THE US
 
 ## MOTIVATION:
+
+In 2016, the Pulitzer Prize winner, Evicted, by sociologist Matthew Desmond, shone a spotlight on the burden and trauma caused by renter evictions in the US. In April 2018, the first-ever data set about evictions across 48 states and the District of Columbia was released by Eviction Lab—Desmond’s research group at Princeton University. To date, the Lab had collected 83 million records and it shows that in 2016, there were almost 900, 000 evictions (renter ordered to leave), and over 2.35 million evictions filed by court. This statistic shows that the national wide average eviction rates and eviction filling rates in 2016 is about 2.34% and 6.12%. Condisdering that not all evictions make it to court or are officially documented by cities and counties, the actual eviction crisis should be even worse.
+
 Evictions cause lots of trouble for both the landlord and tenants, and even the neighborhood, or the whole society.
 
 The landlords usually won’t be able to collect the rent before the evictions, and after the evictions they may face a difficulty in finding good candidates for future tenants in a short amount of time. The tenants who get evicted may end up be homeless, and homeless situation usually causes poverty and even crimes, which would be a social problem.
