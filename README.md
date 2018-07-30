@@ -26,7 +26,7 @@ First, data visualization is presented with a Tableau story (attached below), an
 
 Second, statistical tests and visualization together answering the questions: Are poverty rates positively correlated? Is there a race bias when it comes to evictions?
 
-Furthermore, the correlations of crime rates of the following years of high eviction rates would be another very interesting topic to investigate.
+Furthermore, the correlations of crime rates of the following years of high eviction rates would be another very interesting topic to investigate. see Visualization at Eviction_VS_Crime.pdf
 
 ## PREDICTIONS OF EVICTION RATES:
 Xgboost algorithm is applied and predict the eviction rate with 0.7 rms error with cross validation.
