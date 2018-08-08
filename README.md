@@ -25,16 +25,25 @@ The total data sets size is > 50 Mb.
 
 #### interactive Visualization
 
-Data visualization is presented with a **Tableau story** (attached below), and python plots.
-
 Interactive plots are posted in [**Heroku Interactive Visualization**](https://boiling-tor-78414.herokuapp.com/evictions)
+
+Data visualization is first presented with a **Tableau story** (attached below), and then with various python plots (see below).
+
+![](Renter-Eviction-Story1.png)
+
+![](Renter-Eviction-Story2.png)
+
+![](Renter-Eviction-Story3.png)
+
+![](Renter-Eviction-Story4.png)
+
 
 ### Statistical Tests
 
 Statistical tests and visualization together answering the questions: Are poverty rates positively correlated? Is there a race bias when it comes to evictions?
 Are eviction rates the same for the bottom and top 25% poverty rates? [see **statistical tests**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Eviction_Statistic_Test.ipynb)
 
-Causal Inference: Using **Propensity model** to estimate race causal effect on evictions. ( see [**Causal_Effect_Race_Eviction]( https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Causal_Effect_Race_Eviction.ipynb**))
+Causal Inference: Using **Propensity model** to estimate race causal effect on evictions. ( see [**Causal_Effect_Race_Eviction**]( https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Causal_Effect_Race_Eviction.ipynb))
 
 ![](corr_eviction.png)
 
@@ -49,9 +58,14 @@ Furthermore, data sets of employment status and education status are also merged
 
 Xgboost with regression tree is used. xgb.XGBRegressor is fast, works very well out of the box, a good fast initial approach to get understanding of features that could help.
 
-### Hyper-parameter optimizers: GridSearchCV 
-Xgboost algorithm is applied and predict the eviction rate with < 0.7 rms error with cross validation ( the std of variables is ~ 2)
-Xgboost, regression tree, fast, works very well out of the box, good fast initial approach to get understanding of features that could help.
+### Parameter tuning:
+Hyper-parameter optimizers: GridSearchCV 
+
+### Prediction evaluations
+
+Xgboost algorithm is applied and predict the eviction rate with < 0.7 rms error with cross validation ( the std of variables is ~ 2). Other evaluation metrics are also listed in  [**Eviction predictions**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/eviction_predict.ipynb)
+
+
 
 ## FUTURE IMPROVEMENT
 
@@ -60,12 +74,3 @@ Some data requires extra organization before merges. It would be better to find 
 
 
 
-## Tableau Story for data pre-analysis
-
-![](Renter-Eviction-Story1.png)
-
-![](Renter-Eviction-Story2.png)
-
-![](Renter-Eviction-Story3.png)
-
-![](Renter-Eviction-Story4.png)
