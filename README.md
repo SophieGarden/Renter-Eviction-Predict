@@ -41,7 +41,7 @@ Data visualization is first presented with a **Tableau story** (attached below),
 ### Statistical Tests
 
 Statistical tests and visualization together answering the questions: Are poverty rates positively correlated? Is there a race bias when it comes to evictions?
-Are eviction rates the same for the bottom and top 25% poverty rates? [see **statistical tests**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Eviction_Statistic_Test.ipynb)
+Are eviction rates the same for the bottom and top 25% poverty rates? see [ **statistical tests**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Eviction_Statistic_Test.ipynb)
 
 Causal Inference: Using **Propensity model** to estimate race causal effect on evictions. ( see [**Causal_Effect_Race_Eviction**]( https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Causal_Effect_Race_Eviction.ipynb))
 
@@ -55,6 +55,8 @@ Furthermore, data sets of employment status and education status are also merged
 
 
 ## PREDICTIONS OF EVICTION RATES:
+
+### Choose a model
 
 Xgboost with regression tree is used. xgb.XGBRegressor is fast, works very well out of the box, a good fast initial approach to get understanding of features that could help.
 
