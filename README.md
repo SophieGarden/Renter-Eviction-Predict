@@ -60,7 +60,7 @@ Furthermore, data sets of employment status and education status are also merged
 
 Xgboost with regression tree is used. xgb.XGBRegressor is fast, works very well out of the box, a good fast initial approach to get understanding of features that could help.
 
-### Parameter tuning:
+### Parameter tuning
 Hyper-parameter optimizers: GridSearchCV 
 
 ### Prediction evaluations
