@@ -3,7 +3,7 @@
 
 ## MOTIVATION:
 
-In 2016, the Pulitzer Prize winner, Evicted, by sociologist Matthew Desmond, shone a spotlight on the burden and trauma caused by renter evictions in the US. In April 2018, the first-ever data set about evictions across 48 states and the District of Columbia was released by Eviction Lab—Desmond’s research group at Princeton University. To date, the Lab had collected 83 million records and it shows that in 2016, there were almost 900, 000 evictions (renter ordered to leave), and over 2.35 million evictions filed by court. This statistic shows that the national wide average eviction rates and eviction filling rates in 2016 is about 2.34% and 6.12%. Condisdering that not all evictions make it to court or are officially documented by cities and counties, the actual eviction crisis should be even worse.
+In 2016, the Pulitzer Prize winner, Evicted, by sociologist Matthew Desmond, shone a spotlight on the burden and trauma caused by renter evictions in the US. In April 2018, the first-ever data set about evictions across 48 states and the District of Columbia was released by Eviction Lab—Desmond’s research group at Princeton University. To date, the Lab had collected 83 million records and it shows that in 2016, there were almost 900, 000 evictions (renter ordered to leave), and over 2.35 million evictions filed by court. This statistic shows that the national wide average eviction rates and eviction filling rates in 2016 is about 2.34% and 6.12%. Considering that not all evictions make it to court or are officially documented by cities and counties, the actual eviction crisis should be even worse.
 
 Evictions cause lots of trouble for both the landlord and tenants, and even the neighborhood, or the whole society.
 
@@ -22,25 +22,42 @@ Other data sets, including education levels, employment rates, college/universit
 The total data sets size is > 50 Mb.
 
 ## VISUALIZATION AND STATISTICAL ANALYSIS:
-First, data visualization is presented with a **Tableau story** (attached below), and python plots.
 
-Second, statistical tests and visualization together answering the questions: Are poverty rates positively correlated? Is there a race bias when it comes to evictions?
-Causal Inference: Using Propensity modeling to estimate race causal effect on evictions. ( see **Causal_Effect_Race_Eviction.pdf**)
+#### interactive Visualization
 
-Furthermore, the correlations of crime rates of the following years of high eviction rates would be another very interesting topic to investigate. (see **Visualization at Eviction_VS_Crime.pdf**)
+Data visualization is presented with a **Tableau story** (attached below), and python plots.
+
+Interactive plots are posted in [**Heroku Interactive Visualization**](https://boiling-tor-78414.herokuapp.com/evictions)
+
+### Statistical Tests
+
+Statistical tests and visualization together answering the questions: Are poverty rates positively correlated? Is there a race bias when it comes to evictions?
+Are eviction rates the same for the bottom and top 25% poverty rates? [see **statistical tests**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Eviction_Statistic_Test.ipynb)
+
+Causal Inference: Using **Propensity model** to estimate race causal effect on evictions. ( see [**Causal_Effect_Race_Eviction]( https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Causal_Effect_Race_Eviction.ipynb**))
+
+![](corr_eviction.png)
+
+### More data: crime rates, employment, and education status
+
+The correlation of crime rates of the following years of high eviction rates is another very interesting topic to investigate. (see [**Visualization at Eviction_VS_Crime**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Eviction_VS_Crime.ipynb))
+
+Furthermore, data sets of employment status and education status are also merged with eviction rates data set and is shown in [**merge with more data**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/Eviction_Labor_Edu_Crime.ipynb), and [**visualization before predictions**](https://github.com/SophieGarden/Renter-Eviction-Predict/blob/master/eviction_predict.ipynb)
+
 
 ## PREDICTIONS OF EVICTION RATES:
-Xgboost algorithm is applied and predict the eviction rate with 0.7 rms error with cross validation.
+
+Xgboost with regression tree is used. xgb.XGBRegressor is fast, works very well out of the box, a good fast initial approach to get understanding of features that could help.
+
+### Hyper-parameter optimizers: GridSearchCV 
+Xgboost algorithm is applied and predict the eviction rate with < 0.7 rms error with cross validation ( the std of variables is ~ 2)
 Xgboost, regression tree, fast, works very well out of the box, good fast initial approach to get understanding of features that could help.
 
 ## FUTURE IMPROVEMENT
-Some data requires extra organization.   before merges. It would be better to find data sets with more detailed information.
+
+Some data requires extra organization before merges. It would be better to find data sets with more detailed information.
 
 
-
-## Python codes for statistical testings and eviction rates prediction is shown in eviction_predict.md
-
-## Interactive plots are posted in Heroku: https://boiling-tor-78414.herokuapp.com/evictions
 
 
 ## Tableau Story for data pre-analysis
